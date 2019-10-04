@@ -1,2 +1,2 @@
 # GridCSS-learn
-Постигаю Дзен css grid
+Постигаю дзен css grid

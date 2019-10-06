@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Продажа счастья</title>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700|Montserrat:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="template/css/style.css">
     <script src="template/js/script.js"></script>
 </head>
@@ -13,11 +14,31 @@
     Emmet шаблон страницы
     .b-grid>header.header>.header__logo+.header__contact^nav.nav[role="navigation"]>ul.nav__ul>(li.nav__li>a.nav__a[href="#"]{$})*5^^main.main>article.article>header.article__header>h1.article__title{Продажа радости!}^div{}^^aside.aside+footer.footer
 -->
-    <div class="b-grid">
+
+    <div class="b-grid">        
         <header class="header">
-            <div class="header__logo"></div>
-            <div class="header__contact"></div>
+            <div class="header__bg"></div>
+            <div class="header__wrap">
+                <a role="banner" class="header__logo" href="#"></a>
+                <h1 role="banner" class="header__title">
+                    Happiness
+                    <span class="header__title-pre">shop</span>
+                </h1>
+                <address class="header__contacts">
+                    <ul class="header__contacts-items">
+                        <li class="header__contacts-item">
+                            <a class="header__contacts-href" href="mailto:top_products@gmail.ru">top_products@gmail.ru</a>
+                        </li>
+                        <li class="header__contacts-item">
+                            <a class="header__contacts-href" href="tel:84235544212">8 (423) 553-42-12 </a>
+                        </li>
+                    </ul>
+                    <a href="#" class="button" data-action="callMe">Call me</a>
+                </address>
+                
+            </div>
         </header>
+
         <nav class="nav" role="navigation">
             <ul class="nav__ul">
                 <li class="nav__li"><a href="#" class="nav__a"></a></li>
@@ -27,6 +48,7 @@
                 <li class="nav__li"><a href="#" class="nav__a"></a></li>
             </ul>
         </nav>
+
         <main class="main">
             <article class="article">
                 <header class="article__header">
@@ -35,7 +57,9 @@
                 <div></div>
             </article>
         </main>
+        
         <aside class="aside"></aside>
+        
         <footer class="footer"></footer>
     </div>
 </body>

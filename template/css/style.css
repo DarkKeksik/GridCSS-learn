@@ -99,10 +99,25 @@ a:hover {
 }
 .nav {
   grid-area: nav;
-  background-color: #b5b0fb;
+  box-shadow: 0px 1px 1px 0px #aeaeae;
+  z-index: 1;
+}
+.nav__ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 100%;
 }
 .nav__li {
   list-style-type: none;
+}
+.nav__a {
+  font-weight: 700;
+  font-size: 1rem;
+  color: #333;
+  font-family: "Montserrat";
+  text-transform: uppercase;
 }
 .main {
   grid-area: main;

@@ -43,7 +43,7 @@ a {
 .b-grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: .4fr .1fr 2.2fr .3fr;
+    grid-template-rows: 120px 40px 2.2fr .3fr;
     grid-template-areas:
         "header header header header header header header header header header header header"
         "nav nav nav nav nav nav nav nav nav nav nav nav"
@@ -65,7 +65,7 @@ a {
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center top;
-        filter: grayscale() blur(1px);
+        filter: grayscale() blur(2px);
         transition-duration: .3s;
     }
 
@@ -148,17 +148,24 @@ a {
 
 .main {
     grid-area: main;
-    background-color: #b0f7fb;
+    padding: 1rem;
+    
+    &__article {
+        color: #333;
+        &-title {
+            font-family: "Montserrat";
+        }
+    }
 }
 
 .aside {
     grid-area: aside;
-    background-color: #fbbfbf;
+    border-left: 1px solid #e3e3e3;
 }
 
 .footer {
     grid-area: footer;
-    background-color: #dbfbb0;
+    background-color: #333;
 }
 
 @media screen and (max-width: 768px) {

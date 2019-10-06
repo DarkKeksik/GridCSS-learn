@@ -34,7 +34,7 @@ a:hover {
 .b-grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: .4fr .1fr 2.2fr .3fr;
+  grid-template-rows: 120px 40px 2.2fr .3fr;
   grid-template-areas: "header header header header header header header header header header header header" "nav nav nav nav nav nav nav nav nav nav nav nav" "main main main main main main main main main aside aside aside" "footer footer footer footer footer footer footer footer footer aside aside aside";
   min-height: 100vh;
 }
@@ -50,7 +50,7 @@ a:hover {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
-  filter: grayscale() blur(1px);
+  filter: grayscale() blur(2px);
   transition-duration: .3s;
 }
 .header__wrap {
@@ -121,15 +121,21 @@ a:hover {
 }
 .main {
   grid-area: main;
-  background-color: #b0f7fb;
+  padding: 1rem;
+}
+.main__article {
+  color: #333;
+}
+.main__article-title {
+  font-family: "Montserrat";
 }
 .aside {
   grid-area: aside;
-  background-color: #fbbfbf;
+  border-left: 1px solid #e3e3e3;
 }
 .footer {
   grid-area: footer;
-  background-color: #dbfbb0;
+  background-color: #333;
 }
 @media screen and (max-width: 768px) {
   html {

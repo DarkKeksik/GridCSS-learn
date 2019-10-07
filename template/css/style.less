@@ -159,7 +159,11 @@ a {
     }
     &__article {
         color: #333;
+        transition-duration: .3s;
         
+        &:hover {
+            transform: scale(1.02);
+        }        
         &-header {
             position: relative;
             margin-bottom: 0.4rem;
@@ -225,6 +229,16 @@ a {
 .footer {
     grid-area: footer;
     background-color: #333;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: .875rem;
+    font-family: "Merriweather";
+    text-align: center;
+    border-top: 5px solid #717171;
+    
+    &__href {
+        color: white;
+    }
 }
 
 @media screen and (max-width: 768px) {
